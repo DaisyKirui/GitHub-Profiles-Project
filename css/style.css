@@ -1,3 +1,14 @@
 body {
     background-color: rgb(244, 244, 166);
 }
+
+header{
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+footer{
+    padding-bottom: 10px;
+    text-align: center;
+}
