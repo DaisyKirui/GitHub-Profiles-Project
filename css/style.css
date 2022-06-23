@@ -5,10 +5,18 @@ body {
 header{
     padding-left: 50px;
     padding-right: 50px;
-    text-align: center;
+    text-align: justify;
 }
 
 footer{
     padding-bottom: 10px;
     text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
 }
