@@ -1,41 +1,59 @@
 document.addEventListener("DOMContentLoaded", () => {
   const myTitle = document.getElementById("myTitle");
   console.log(myTitle.textContent);
+
+const flowerData = "http://localhost:3000/flowers" ;
+const flowerType = document.getElementById("flowerType");
+const flowerNumber = document.getElementById("flowerNumber");
+
+let chosenflower;
+flowerType.addEventListener('submit', (e)=>{
+  consolelog(e.preventDefault());
+  
+})
+})
+  /*
+ chosenflower.typepfflower += parseInt (e.target.typeofflower.value);
+ showInfo(chosenflower);
+ console.log(e.type)
 });
+
+})
+
+fetch(flowerData)
+.then((res)=>res.json())
+.then (renderflowers);
+function renderflowers(flowers){
+flowers.forEach(renderflower);
+}
+
+
+
+function renderflower(flower){
+  let flowerList = getElementById("mycustombouquet")
+  const list =document.createElement("li");
+  list.innerText = flower.type
+  list.innerText = flower.number
+  mycustombouquet.appendChild("list");
+}
+
+
+
 
 const createCustomBouquet = function (event) {
   event.preventDefault();
   let typeOfFlower = document.getElementById("flowerType");
   let numberOfFlower = document.getElementById("flowerNumber");
-  customBouquet.innerText = typeOfFlower.value && numberOfFlower.value;
-  appendNumberOfFlower(numberOfFlower);
+  let myCustomBouquet = document.getElementById("mycustombouquet");
+  let flowerlist = document.createElement("li");  
+  flowerlist.forEach(element => {
+    myCustomBouquet.appendChild(element);
+  }); 
+  let customBouquet = typeOfFlower.value && numberOfFlower.value;
   event.target.reset();
 }
 console.log(customBouquet);
-
-
-
-/*
-document.addEventListener("DOMContentLoaded", () => {
-    let inputFlowerType = document.getElementById("flowerType");
-    total.addEventListener("submit", createCustomBouquet);
-  });
-
-  const createCustomBouquet = function (event) {
-    event.preventDefault();
-    let newTaskList = document.getElementById("bouquet");
-    let bouquetFlowers = document.createElement("li");
-    let customBouquetType = document.getElementById("enterFlowerType");
-    customBouquet.innerText = customBouquetType.value && customBouquetNumber;
-    console.log(customBouquet);
-    appendcustomBouquet(customBouquet);
-    event.target.reset();
-  };
-  const erase = (event) => {
-    event.target.ul.remove();
-  };
-  
-  const appendcustomBouquet = (bouquet) => {
-    document.getElementById("bouquet").appendChild(bouquet);
-  };
 */
+
+
+
