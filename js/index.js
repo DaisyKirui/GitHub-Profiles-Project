@@ -2,6 +2,29 @@ document.addEventListener("DOMContentLoaded", () => {
   const myTitle = document.getElementById("myTitle");
   console.log(myTitle.textContent);
 
+  const inputFlower = document.getElementById("typeofflower");
+  const inputNumber = document.getElementById("numberofflower");
+  const myButton = document.querySelector('.enter');
+  const list = document.querySelector('.bouquetoutput ul')
+  myButton.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const mylist = document.createElement('li');
+    mylist.innerHTML = `${inputText.value} ${inputNumber.value}`;
+    list.appendChild(mylist);
+
+    const mySpan = document.createElement('span')
+    mySpan.innerHTML = 'x';
+    mylist.appendChild(mySpan);
+
+  } )
+
+})
+
+
+
+/*
+
 const flowerData = "http://localhost:3000/flowers" ;
 const flowerType = document.getElementById("flowerType");
 const flowerNumber = document.getElementById("flowerNumber");
@@ -46,4 +69,4 @@ const createCustomBouquet = function (event) {
 console.log(customBouquet);
 
 
-
+*/
