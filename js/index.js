@@ -11,13 +11,10 @@ flowerType.addEventListener('submit', (e)=>{
   consolelog(e.preventDefault());
   
 })
-})
-  /*
  chosenflower.typepfflower += parseInt (e.target.typeofflower.value);
  showInfo(chosenflower);
  console.log(e.type)
-});
-
+;
 })
 
 fetch(flowerData)
@@ -26,9 +23,6 @@ fetch(flowerData)
 function renderflowers(flowers){
 flowers.forEach(renderflower);
 }
-
-
-
 function renderflower(flower){
   let flowerList = getElementById("mycustombouquet")
   const list =document.createElement("li");
@@ -36,9 +30,6 @@ function renderflower(flower){
   list.innerText = flower.number
   mycustombouquet.appendChild("list");
 }
-
-
-
 
 const createCustomBouquet = function (event) {
   event.preventDefault();
@@ -53,7 +44,6 @@ const createCustomBouquet = function (event) {
   event.target.reset();
 }
 console.log(customBouquet);
-*/
 
 
 
