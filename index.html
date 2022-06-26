@@ -15,17 +15,16 @@
          <div class="bouquetinput">
             <form id="flowerType" action="" method="POST">
                 <label class="label1" for="enterFlowerType"><h3>FLOWER TYPE</h3></label>
-                <input class="data" type="text" id="flowerType" name="enterFlowerType" placeholder="Type of Flower">
-                <input class="enter" type="submit" value="Enter">
+                <input class="data" type="text" id="typeofflower" name="enterFlowerType" placeholder="Type of Flower">
             </form>
             <form id="flowerNumber" action="" method="POST">
                 <label class="label2" for="enterFlowerNumber"><h3>FLOWER NUMBER</h3></label>
-                <input class="data" type=number id="flowerNumber" name="enterFlowerNumber" placeholder="Number of Flowers">
-                <input class="enter" type="submit" value="Enter">
+                <input class="data" type=number id="numberofflower" name="enterFlowerNumber" placeholder="Number of Flowers">
             </form>
-            <button class="buttons">RESET</button>
-         </div>
+            <input class="enter" type="submit" value="Enter">
+        </div>
          <div class="images">
+            <h2>Here are the four flower varities</h2>
             <img src="./assets/daisies.PNG" alt="This is an image of daisies" title="DAISIES">
             <img src="./assets/lilies.PNG" alt="This is an image of lilies" title="LILIES">
             <img src="./assets/tulips.PNG" alt="This is an image of tulips" title="TULIPS">
@@ -33,7 +32,10 @@
          </div>
 
          <div id="bouquetoutput">
-            <h3>MY CUSTOM BOUQUET</h3>
+            <h3>MY BOUQUET</h3>
+            <ul id="mycustombouquet">
+
+            </ul>
             <!--The flower number and flower type to appear here-->
             <button class="buttons">Delete Bouquet</button>
          </div>
