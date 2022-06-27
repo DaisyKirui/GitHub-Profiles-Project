@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const myTitle = document.getElementById("myTitle");
+  console.log(myTitle.textContent);
+  
 const APIURL = 'https://api.github.com/users/'
 
 const main = document.getElementById('main')
@@ -20,7 +24,7 @@ async function getUser(username) {
 async function getRepos(username) {
     try {
         const { data } = await axios(APIURL + username + '/repos?sort=created')
-
+ 
         addReposToCard(data)
     } catch(err) {
         createErrorCard('Problem fetching repos')
@@ -89,10 +93,8 @@ form.addEventListener('submit', (e) => {
         search.value = ''
     }
 })
-
-/*document.addEventListener("DOMContentLoaded", () => {
-  const myTitle = document.getElementById("myTitle");
-  console.log(myTitle.textContent);
+})
+/*
 
   const inputFlower = document.getElementById("typeofflower");
   //const inputNumber = document.getElementById("numberofflower");
